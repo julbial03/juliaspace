@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projekt</title>
+	<link rel="stylesheet" href= "CSS.css">
+</head>
+<body style ="width: 100%;
+	height: 100%;
+	background-repeat:no-repeat;
+	background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(background.jpg);
+	background-size: cover;
+	background-attachment:fixed;
+	background-position: center;">
+	<div class ="banner">
+		<div class = "navbar">
+			<img src = "logo.png" class="logo">
+			<ul>
+				<li><a href="index.html"> Strona główna</a></li>
+				<li><a href="hiszpania.html">Hiszpania</a></li>
+				<li><a href="szwecja.html">Szwecja</a></li>
+				<li><a href="koreapoludniowa.html">Korea Południowa</a></li>
+				<li><a href="galeriazdjec.html">Galeria Zdjęć</a></li>
+			</ul>
+		</div>
+		<div class="full-img" id="fullImgBox">
+			<img src="img1.png" id="fullImg">
+			<span onclick="closeFullimg()">X</span>
+		</div>
+		<div class="info">
+				<div class="naglowek">
+				<h3> Zdjęcia wykonane przy użyciu sztucznej inteligencji ukazujące święta w Hiszpanii: </h3>
+				</div>
+				<div class = "img-gallery">
+				<img src="img1.png" onclick="openFullimg(this.src)">
+				<img src="img2.png" onclick="openFullimg(this.src)">
+				<img src="img3.png" onclick="openFullimg(this.src)">
+				<img src="img4.png" onclick="openFullimg(this.src)">
+				<img src="img5.png" onclick="openFullimg(this.src)">
+				<img src="img6.png" onclick="openFullimg(this.src)">
+				<img src="img7.png" onclick="openFullimg(this.src)">
+				<img src="img8.png" onclick="openFullimg(this.src)">
+				</div>
+				<div class="naglowek">
+				<h3> Zdjęcia wykonane przy użyciu sztucznej inteligencji ukazujące święta w Szwecji: </h3>
+				</div>
+				<div class = "img-gallery">
+				<img src="img9.png" onclick="openFullimg(this.src)">
+				<img src="img10.png" onclick="openFullimg(this.src)">
+				<img src="img11.png" onclick="openFullimg(this.src)">
+				<img src="img12.png" onclick="openFullimg(this.src)">
+				<img src="img13.png" onclick="openFullimg(this.src)">
+				<img src="img14.png" onclick="openFullimg(this.src)">
+				<img src="img15.png" onclick="openFullimg(this.src)">
+				<img src="img16.png" onclick="openFullimg(this.src)">
+				</div>
+				<div class="naglowek">
+				<h3> Zdjęcia wykonane przy użyciu sztucznej inteligencjiukazujące święta w Koreii Południowej: </h3>
+				</div>
+				<div class = "img-gallery">
+				<img src="img17.png" onclick="openFullimg(this.src)">
+				<img src="img18.png" onclick="openFullimg(this.src)">
+				<img src="img19.png" onclick="openFullimg(this.src)">
+				<img src="img20.png" onclick="openFullimg(this.src)">
+				<img src="img21.png" onclick="openFullimg(this.src)">
+				<img src="img22.png" onclick="openFullimg(this.src)">
+				<img src="img23.png" onclick="openFullimg(this.src)">
+				<img src="img24.png" onclick="openFullimg(this.src)">
+			</div>
+		</div>
+	</div>
+	<script>
+				
+		var fullImgBox = document.getElementById("fullImgBox");
+		var fullImg = document.getElementById("fullImg");
+				
+		function openFullimg(pic){
+			fullImgBox.style.display = "flex";
+			fullImg.src = pic;
+		}
+
+		function closeFullimg(){
+			fullImgBox.style.display = "none";
+		}
+			
+	</script>
+</body>
+</html>
